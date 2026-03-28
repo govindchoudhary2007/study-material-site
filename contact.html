@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AMPICS</title>
+
+    <link rel="icon" href="portal.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== Login overlay (same as index.html) ===== -->
+    <div id="login-screen" aria-label="Login form">
+        <div class="login-box">
+            <h2>Welcome to AMPICS</h2>
+            <p>Please sign in to continue.</p>
+            <form id="login-form">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required>
+
+                <button type="submit">Sign In</button>
+                <div id="login-error" role="alert" aria-live="polite"></div>
+            </form>
+            <p style="margin-top: 14px; font-size: 0.9rem; color: #555;">Tip: use <strong>student</strong> /
+                <strong>1234</strong>
+            </p>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <!-- ===== HEADER ===== -->
+        <header class="top-header">
+            <div class="university">
+                <img src="portal.png" alt="" class="logo">
+            </div>
+
+            <h1 style="color:#1565c0;">A.M. Patel Institute of Computer Studies (AMPICS)</h1>
+        </header>
+
+        <!-- ===== NAVBAR ===== -->
+        <nav class="navbar">
+            <!-- Active page is highlighted with class="active" -->
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+
+            <!-- Search bar (type and press search or ENTER) -->
+            <div class="nav-search">
+                <!-- You can type anything here to search -->
+                <input id="nav-search-input" type="text" placeholder="Search subjects, pages...">
+                <button id="nav-search-btn" type="button">Search</button>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Courses ▾</button>
+
+                <div class="dropdown-content">
+
+                    <!-- BCA -->
+                    <div class="submenu">
+                        <span>BCA ▸</span>
+                        <div class="submenu-content">
+
+                            <div class="submenu">
+                                <span>Sem 1</span>
+                                <div class="submenu-content">
+                                    <a href="">BWP</a>
+                                    <a href="">LDP</a>
+                                    <a href="">DA</a>
+                                    <a href="">CS</a>
+                                    <a href="">IPL</a>
+                                    <a href="">OS</a>
+                                </div>
+                            </div>
+
+                            <div class="submenu">
+                                <span>Sem 2</span>
+                                <div class="submenu-content">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1AmdRNSuWzzdSk0X9audkKqtvafdIx-5l">AWP</a>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/12Fizn5tslNhO1jcJGDRE3j-cIRDZQeKF">LDP-2</a>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1SgKCg3W_q8C9lrAIqkFVHbqYwOgBOJSb">DA-2</a>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1IpFXFYk6jsaIJoW6TAK3z6-0F_jCxWhe">EWS</a>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1GUynv7UYDDiWMxIItBfvjtGV5SozL--v">SEP</a>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/15G4v9KGWTjznXS1OPELcqw7pxL-moP9O">SAD</a>
+                                </div>
+                            </div>
+
+
+                            <a href="#">Sem 3</a>
+                            <a href="#">Sem 4</a>
+                            <a href="#">Sem 5</a>
+                            <a href="#">Sem 6</a>
+
+                        </div>
+                    </div>
+
+                    <!-- MCA -->
+                    <div class="submenu">
+                        <span>MCA ▸</span>
+                        <div class="submenu-content">
+                            <a href="#">Sem 1</a>
+                            <a href="#">Sem 2</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <a href="#" id="logout-link" style="display:none;">Logout</a>
+        </nav>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <h2>Contact AMPICS</h2>
+            <p>Have a question? Reach out to us using the form below or use the contact details.</p>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact-page">
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h3>Contact Details</h3>
+                    <!-- Replace all {{...}} with your real details -->
+                    <p><strong>Name:</strong> Govind Choudhary</p>
+                    <p><strong>Phone:</strong> +91 9251009527</p>
+                    <p><strong>Email:</strong> govindchoudhary06873@gmail.com</p>
+                    <p><strong>Address:</strong> Rajasthan, Sirohi</p>
+                    <p>
+                        <!-- Replace all {{...}} with your real details -->
+                        <em>Feel free to reach out. We typically respond within a day.</em>
+                    </p>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form">
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" name="fullname" type="text" placeholder="Your full name" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" placeholder="Subject" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                        <div id="contact-status" class="contact-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>© 2026 AMPICS, Ganpat University | All Rights Reserved</p>
+        </footer>
+    </div> <!-- end main-content -->
+
+    <!-- ===== PAGE SCRIPT ===== -->
+    <script>
+        // --- Login / logout logic (shared with index.html) ---
+        const loginScreen = document.getElementById('login-screen');
+        const mainContent = document.getElementById('main-content');
+        const loginForm = document.getElementById('login-form');
+        const loginError = document.getElementById('login-error');
+        const logoutLink = document.getElementById('logout-link');
+
+        function showMainContent() {
+            loginScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+            logoutLink.style.display = 'inline-block';
+            document.body.style.opacity = 0;
+            requestAnimationFrame(() => {
+                document.body.style.transition = 'opacity 0.5s ease';
+                document.body.style.opacity = 1;
+            });
+        }
+
+        function showLoginScreen() {
+            loginScreen.style.display = 'flex';
+            mainContent.style.display = 'none';
+            logoutLink.style.display = 'none';
+            document.body.style.opacity = 1;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const loggedIn = localStorage.getItem('ampicsLoggedIn') === 'true';
+            if (loggedIn) {
+                showMainContent();
+            } else {
+                showLoginScreen();
+            }
+        });
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const username = loginForm.username.value.trim();
+            const password = loginForm.password.value.trim();
+            if (!username || !password) {
+                loginError.textContent = 'Enter both username and password.';
+                return;
+            }
+            if (username === 'student' && password === '1234') {
+                localStorage.setItem('ampicsLoggedIn', 'true');
+                showMainContent();
+                loginError.textContent = '';
+            } else {
+                loginError.textContent = 'Invalid username or password.';
+            }
+        });
+
+        logoutLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            localStorage.removeItem('ampicsLoggedIn');
+            loginForm.reset();
+            showLoginScreen();
+        });
+
+        // ===== Search bar logic =====
+        const navSearchInput = document.getElementById('nav-search-input');
+        const navSearchBtn = document.getElementById('nav-search-btn');
+
+        const searchPages = {
+            // You can add more keywords here
+            "bca": "index.html",
+            "mca": "index.html",
+            "about": "about.html",
+            "contact": "contact.html"
+        };
+
+        function runNavSearch() {
+            const query = navSearchInput.value.trim().toLowerCase();
+            if (!query) {
+                alert('Please enter something to search.');
+                return;
+            }
+
+            const target = searchPages[query];
+            if (target) {
+                window.location.href = target;
+            } else {
+                alert('No result found');
+            }
+        }
+
+        navSearchBtn.addEventListener('click', runNavSearch);
+
+        // Allow ENTER key to submit the search
+        navSearchInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                runNavSearch();
+            }
+        });
+
+        // --- Contact form logic ---
+        const contactForm = document.getElementById('contact-form');
+        const contactStatus = document.getElementById('contact-status');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const fullName = contactForm.fullname.value.trim();
+            const email = contactForm.email.value.trim();
+            const subject = contactForm.subject.value.trim();
+            const message = contactForm.message.value.trim();
+
+            // Simple validation
+            if (!fullName || !email || !subject || !message) {
+                contactStatus.textContent = 'Please fill all fields.';
+                contactStatus.className = 'contact-status error';
+                return;
+            }
+
+            // Save draft in localStorage (optional, can be removed)
+            const draft = { fullName, email, subject, message };
+            localStorage.setItem('contactDraft', JSON.stringify(draft));
+
+            // Show success message
+            contactStatus.textContent = 'Message sent successfully!';
+            contactStatus.className = 'contact-status success';
+
+            // If you want to use mailto fallback, uncomment the line below:
+            window.location.href = `mailto:govindchoudhary06873@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+            contactForm.reset();
+        });
+
+        // Load draft (optional): this will prefill the form if a draft exists
+        const savedDraft = localStorage.getItem('contactDraft');
+        if (savedDraft) {
+            try {
+                const parsed = JSON.parse(savedDraft);
+                contactForm.fullname.value = parsed.fullName || '';
+                contactForm.email.value = parsed.email || '';
+                contactForm.subject.value = parsed.subject || '';
+                contactForm.message.value = parsed.message || '';
+            } catch (e) {
+                // ignore invalid draft data
+            }
+        }
+    </script>
+</body>
+
+</html>
